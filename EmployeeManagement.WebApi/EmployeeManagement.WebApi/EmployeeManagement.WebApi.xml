@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeManagement.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:EmployeeManagement.WebApi.Controllers.EmployeeController.Login(EmployeeManagement.WebApi.Models.LoginModel)">
+            <summary>
+            Registered users can login. On login Token will received to access methods.
+            </summary>
+            <param name="model"> login model having user name and passwords.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.WebApi.Controllers.EmployeeController.GetEmployee">
+            <summary>
+            Admin user can fetch employee list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.WebApi.Controllers.EmployeeController.AddEmployee(EmployeeManagement.WebApi.Models.Employee)">
+            <summary>
+            New employee can be added by this API.
+            </summary>
+            <param name="employee"> it will return added employee.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.WebApi.Controllers.EmployeeController.UpdateEmployee(EmployeeManagement.WebApi.Models.Employee)">
+            <summary>
+            Employee records can be edited by Update API.
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.WebApi.Controllers.EmployeeController.DeleteEmployee(System.Int32)">
+            <summary>
+            Employee Record can be deleted based on ID.
+            </summary>
+            <param name="id">employeed id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.WebApi.Controllers.EmployeeController.GetEmployeeId(System.Int32)">
+            <summary>
+            Employee Record can be fetched by Id
+            </summary>
+            <param name="id">employee id</param>
+            <returns></returns>
+        </member>
+        <member name="T:EmployeeManagement.WebApi.IServices.IEmployeeService">
+            <summary>
+            Employee service interface
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.WebApi.IServices.IIdentityService">
+            <summary>
+            Login methods
+            </summary>
+        </member>
+    </members>
+</doc>
